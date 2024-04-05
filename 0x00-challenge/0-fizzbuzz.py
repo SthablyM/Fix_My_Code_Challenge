@@ -14,16 +14,19 @@ def fizzbuzz(n):
     """
     if n < 1:
         return
+    
+    temp_result = []
 
     for i in range(1, n + 1):
         if (i % 3) == 0 and (i % 5) == 0:
-            print("FizzBuzz ")
+            temp_result.append("FizzBuzz ")
         elif (i % 3) == 0:
-            print("Fizz ")
+            temp_result.append("Fizz ")
         elif (i % 5) == 0:
-            print("Buzz ")
+            temp_result.append("Buzz ")
         else:
-            print(str(i)+" ")
+            temp_result.append(str(i)+" ")
+    print("".join(temp_result))
 
 
 
